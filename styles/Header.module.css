@@ -1,0 +1,24 @@
+.container {
+	width: 80vw;
+	margin: auto;
+	height: 20vh;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	z-index: 1;
+	position: relative;
+}
+.link {
+	font-family: 'Montserrat';
+	color: #fff;
+	font-weight: 500;
+	padding: 0.4rem 1.5rem;
+	background: rgb(58, 58, 60);
+	background: linear-gradient(
+		97deg,
+		rgba(58, 58, 60, 0.2) 6.14%,
+		rgba(58, 58, 60, 1) 98.92%
+	);
+	backdrop-filter: blur(40px);
+	border-radius: 25px;
+}
