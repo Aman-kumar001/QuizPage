@@ -45,6 +45,7 @@
 }
 .card :nth-child(1) {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 }
 .card :nth-child(2) {
