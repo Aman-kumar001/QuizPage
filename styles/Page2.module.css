@@ -1,0 +1,156 @@
+.container {
+	width: 100%;
+	margin: auto;
+	height: auto;
+	position: relative;
+}
+.b1 {
+	position: absolute;
+	height: 4rem;
+	width: 4rem;
+	background: #fe5826;
+	filter: blur(300px);
+	top: 1rem;
+	left: 1rem;
+}
+.features {
+	width: 80%;
+	margin: auto;
+}
+.cards {
+	position: absolute;
+	left: 30%;
+	top: -6rem;
+	z-index: 1;
+	width: 40%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	column-gap: 2rem;
+}
+.card {
+	flex: 1;
+	height: 12rem;
+	background: linear-gradient(
+		166.6deg,
+		rgba(58, 58, 60, 0.8) -6.83%,
+		rgba(58, 58, 60, 0) 99.95%
+	);
+	filter: drop-shadow(0px 0px 50px rgba(22, 22, 22, 0.2));
+	backdrop-filter: blur(20px);
+
+	border-radius: 30px;
+	display: flex;
+	flex-direction: column;
+}
+.card :nth-child(1) {
+	display: flex;
+	align-items: center;
+}
+.card :nth-child(2) {
+	padding: 0.5rem;
+	padding-bottom: 1rem;
+}
+.card :nth-child(2) p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #ffffff;
+	font-weight: 700;
+	text-shadow: 2px 2px 10px #3fabae, -2px -2px 10px #fe5826;
+}
+.para {
+	width: 60%;
+	margin: auto;
+	z-index: 2;
+	position: relative;
+}
+
+.b2 {
+	background: #3fabae;
+	filter: blur(200px);
+	position: absolute;
+	height: 4rem;
+	width: 4rem;
+	bottom: 0;
+	right: 0;
+}
+.q1 {
+	width: 60%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	column-gap: 1rem;
+	/* background: #3fabae; */
+	position: relative;
+}
+.ilus {
+	flex: 1;
+}
+.expl {
+	flex: 1;
+}
+.reward {
+	text-align: right;
+	margin: 0;
+	font-size: 3rem;
+	font-weight: 700;
+	color: black;
+	-webkit-text-fill-color: #f7eee5;
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: #222222;
+}
+.rewardPara {
+	text-align: center;
+	color: #161616;
+	padding: 2rem 1rem;
+	background: linear-gradient(
+		145.4deg,
+		rgba(255, 255, 255, 0.5) 14.49%,
+		rgba(255, 255, 255, 0) 99%
+	);
+	backdrop-filter: blur(10px);
+	/* Note: backdrop-filter has minimal browser support */
+
+	border-radius: 30px;
+	border: #ffffff 1px solid;
+}
+.b3 {
+	background: #fe5826;
+	filter: blur(300px);
+	position: absolute;
+	bottom: 50%;
+	right: 0;
+	height: 3rem;
+	width: 3rem;
+}
+.q2 {
+	width: 60%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	margin-top: 1rem;
+	flex-direction: row-reverse;
+	column-gap: 1rem;
+	/* background: #3fabae; */
+	position: relative;
+}
+.courses {
+	text-align: left;
+	margin: 0;
+	font-size: 3rem;
+	font-weight: 700;
+	color: black;
+	-webkit-text-fill-color: #f7eee5;
+	-webkit-text-stroke-width: 1.5px;
+	-webkit-text-stroke-color: #222222;
+}
+.b4 {
+	background: #3fabae;
+	filter: blur(300px);
+	position: absolute;
+	bottom: 50%;
+	left: -2rem;
+	height: 4rem;
+	width: 4rem;
+}
