@@ -1,6 +1,6 @@
 import styles from '../styles/Footer.module.css';
 import Image from 'next/dist/client/image';
-import yt from '../public/footer/yt.svg';
+import yt from '../public/footer/YT.svg';
 import fb from '../public/footer/fb.svg';
 import mail from '../public/footer/mail.svg';
 import { useEffect, useState } from 'react';
