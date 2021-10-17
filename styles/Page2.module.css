@@ -6,16 +6,18 @@
 }
 .b1 {
 	position: absolute;
-	height: 4rem;
-	width: 4rem;
+	height: 5rem;
+	width: 5rem;
 	background: #fe5826;
 	filter: blur(300px);
 	top: 1rem;
 	left: 1rem;
+	z-index: 0;
 }
 .features {
 	width: 80%;
 	margin: auto;
+	z-index: 1;
 }
 .cards {
 	position: absolute;
@@ -27,6 +29,7 @@
 	display: flex;
 	flex-direction: row;
 	column-gap: 2rem;
+	z-index: 1;
 }
 .card {
 	flex: 1;
@@ -55,6 +58,7 @@
 .card :nth-child(2) p {
 	margin: 0;
 	padding: 0;
+	font-size: 1rem;
 	text-align: center;
 	color: #ffffff;
 	font-weight: 700;
@@ -65,6 +69,7 @@
 	margin: auto;
 	z-index: 2;
 	position: relative;
+	z-index: 1;
 }
 
 .b2 {
@@ -75,6 +80,7 @@
 	width: 4rem;
 	bottom: 0;
 	right: 0;
+	z-index: 0;
 }
 .q1 {
 	width: 60%;
@@ -84,6 +90,7 @@
 	column-gap: 1rem;
 	/* background: #3fabae; */
 	position: relative;
+	z-index: 1;
 }
 .ilus {
 	flex: 1;
@@ -114,7 +121,7 @@
 	/* Note: backdrop-filter has minimal browser support */
 
 	border-radius: 30px;
-	border: #ffffff 1px solid;
+	border: #ffffff 1.5px solid;
 }
 .b3 {
 	background: #fe5826;
@@ -122,8 +129,9 @@
 	position: absolute;
 	bottom: 50%;
 	right: 0;
-	height: 3rem;
-	width: 3rem;
+	height: 4rem;
+	width: 4rem;
+	z-index: 0;
 }
 .q2 {
 	width: 60%;
@@ -152,6 +160,11 @@
 	position: absolute;
 	bottom: 50%;
 	left: -2rem;
-	height: 4rem;
-	width: 4rem;
+	height: 5rem;
+	width: 5rem;
+}
+@media (min-width: 1400px) {
+	.card :nth-child(2) p {
+		font-size: 1.2rem;
+	}
 }
