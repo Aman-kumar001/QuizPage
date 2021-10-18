@@ -127,10 +127,10 @@
 	background: #fe5826;
 	filter: blur(300px);
 	position: absolute;
-	bottom: 50%;
+	bottom: 30%;
 	right: 0;
-	height: 4rem;
-	width: 4rem;
+	height: 5rem;
+	width: 5rem;
 	z-index: 0;
 }
 .q2 {

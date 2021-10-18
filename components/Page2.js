@@ -5,8 +5,10 @@ import card2 from '../public/cards/card2.svg';
 import card3 from '../public/cards/card3.svg';
 import Image from 'next/image';
 import waves from '../public/waves2.svg';
-import ilus1 from '../public/body/ilus1.svg';
-import ilus2 from '../public/body/ilus2.svg';
+import waves4 from '../public/waves4.svg';
+import waves3 from '../public/waves3.svg';
+import ilus1 from '../public/body/ilus1.png';
+import ilus2 from '../public/body/ilus2.png';
 import line1 from '../public/body/connect1.svg';
 import line2 from '../public/body/line2.svg';
 
@@ -56,6 +58,7 @@ const Page2 = () => {
 						top: '10rem',
 						float: 'initial',
 						zIndex: 1,
+						opacity: '0.6',
 					}}
 				>
 					<Image src={waves} />
@@ -90,34 +93,68 @@ const Page2 = () => {
 			<div style={{ width: '30%', margin: 'auto' }}>
 				<Image src={line1} />
 			</div>
-			<div className={styles.q1}>
-				<div className={styles.ilus}>
-					<Image src={ilus1} />
+			<div style={{ width: '100%', position: 'relative' }}>
+				{ready && window.innerWidth > 800 && (
+					<div
+						style={{
+							width: '100%',
+							overflow: 'hidden',
+							position: 'absolute',
+							top: '0',
+							float: 'initial',
+							zIndex: 1,
+							opacity: '0.6',
+						}}
+					>
+						<Image src={waves3} />
+					</div>
+				)}
+				<div className={styles.q1}>
+					<div className={styles.ilus}>
+						<Image src={ilus1} />
+					</div>
+					<div className={styles.expl}>
+						<p className={styles.reward}>reward</p>
+						<p className={styles.rewardPara}>
+							Get reward points based on your performance. Collect more reward
+							points to get access to premium study material
+						</p>
+					</div>
+					<span className={styles.b3}></span>
 				</div>
-				<div className={styles.expl}>
-					<p className={styles.reward}>reward</p>
-					<p className={styles.rewardPara}>
-						Get reward points based on your performance. Collect more reward
-						points to get access to premium study material
-					</p>
-				</div>
-				<span className={styles.b3}></span>
 			</div>
 			<div style={{ width: '30%', margin: 'auto' }}>
 				<Image src={line2} />
 			</div>
-
-			<div className={styles.q2}>
-				<div className={styles.ilus}>
-					<Image src={ilus2} />
+			<div style={{ width: '100%', position: 'relative' }}>
+				{ready && window.innerWidth > 800 && (
+					<div
+						style={{
+							width: '100%',
+							overflow: 'hidden',
+							position: 'absolute',
+							top: '0',
+							float: 'initial',
+							zIndex: 1,
+							opacity: '0.5',
+							zIndex: '0',
+						}}
+					>
+						<Image src={waves4} />
+					</div>
+				)}
+				<div className={styles.q2}>
+					<div className={styles.ilus}>
+						<Image src={ilus2} />
+					</div>
+					<div className={styles.expl}>
+						<p className={styles.courses}>Courses</p>
+						<p className={styles.rewardPara}>
+							Use those reward points to redeem amazing courses by Scoreplus.
+						</p>
+					</div>
+					<span className={styles.b4}></span>
 				</div>
-				<div className={styles.expl}>
-					<p className={styles.courses}>Courses</p>
-					<p className={styles.rewardPara}>
-						Use those reward points to redeem amazing courses by Scoreplus.
-					</p>
-				</div>
-				<span className={styles.b4}></span>
 			</div>
 		</div>
 	);
